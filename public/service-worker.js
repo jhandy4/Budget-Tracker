@@ -2,8 +2,9 @@ const FILES_TO_CACHE = [
   "/",
   "/index.html",
   "/index.js",
+  "/db.js",
   "/manifest.webmanifest",
-  "/style.css",
+  "/styles.css",
   "/icons/icon-192x192.png",
   "/icons/icon-512x512.png"
 ];
@@ -41,9 +42,9 @@ self.addEventListener("activate", function(evt) {
   self.clients.claim();
 });
 
-// fetch
+// fetch change for evt.request in slack
 self.addEventListener("fetch", function(evt) {
-  if (evt.request.url.includes("/api/")) {
+  if (evt.request.url.includes("/")) {
     evt.respondWith(
       caches
         .open(DATA_CACHE_NAME)
