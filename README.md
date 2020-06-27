@@ -11,8 +11,6 @@ When brought back online:
 
   * Offline entries should be added to tracker.
 
-#### Image:
 
-   **Main Page**
 
    ![Main Page](public/icons/Screenshot.png)
