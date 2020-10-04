@@ -19,6 +19,10 @@ When brought back online:
    4. The new total is calculated and posted at the top of the screen.
    5. Enter the next transaction or save until later.
 
+## Installation: 
+
+   npm install
+
 
 
    ![Main Page](public/icons/Screenshot.png)
